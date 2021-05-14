@@ -26,7 +26,7 @@ export const network = new NetworkConnector({
 })
 
 export const walletconnect = new WalletConnectConnector({
-  rpc: { 1: RPC_URLS[1], 4: RPC_URLS[4] },
+  rpc: { 1: RPC_URLS[1] },
   qrcode: true,
   pollingInterval: POLLING_INTERVAL
 })
@@ -66,4 +66,4 @@ export const magic = new MagicConnector({
 
 export const portis = new PortisConnector({ dAppId: process.env.PORTIS_DAPP_ID as string, networks: [1, 100] })
 
-export const torus = new TorusConnector({ chainId: 1 })
+export const torus = new TorusConnector({ chainId: 4 })
